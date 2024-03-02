@@ -82,6 +82,8 @@ const RightSection = () => {
                             <h1>Talk to AI</h1>
                             <p>that get you!</p>
                         </div>
+                        <div>
+                        </div>
                         <div className={styles.s2}>
                             <div className={styles.suggestioncard}>
                                 <h2>Recommend activities</h2>

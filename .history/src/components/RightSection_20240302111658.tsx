@@ -80,7 +80,7 @@ const RightSection = () => {
                     <div className={styles.nochat}>
                         <div className={styles.s1}>
                             <h1>Talk to AI</h1>
-                            <p>that get you!</p>
+                            <span><p>that get you!</p></span>
                         </div>
                         <div className={styles.s2}>
                             <div className={styles.suggestioncard}>

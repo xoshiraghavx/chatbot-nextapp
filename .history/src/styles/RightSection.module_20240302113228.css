@@ -1,4 +1,8 @@
 .rightSection {
+    /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
+    /* background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%); */
+    /* background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%); */
+    background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
     height: 100vh;
     /* width: 100vw; */
     padding: 0px 20px;

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react'
 import styles from '@/styles/RightSection.module.css'
+import chatgptlogo from '@/assets/chatgptlogo.png'
 import chatgptlogo2 from '@/assets/chatgptlogo2.png'
 import nouserlogo from '@/assets/nouserlogo.png'
 import Image from 'next/image'
@@ -80,7 +81,7 @@ const RightSection = () => {
                     <div className={styles.nochat}>
                         <div className={styles.s1}>
                             <h1>Talk to AI</h1>
-                            <p>that get you!</p>
+                            <h1>that get you!</h1>
                         </div>
                         <div className={styles.s2}>
                             <div className={styles.suggestioncard}>

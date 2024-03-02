@@ -77,11 +77,11 @@ const RightSection = () => {
                         ))}
                     </div>
                     :
-                    <div className={styles.nochat}>
-                        <div className={styles.s1}>
+                    <div >
+                        <div>
                             <h1>Talk to AI</h1>
-                            <p>that get you!</p>
                         </div>
+                            <p>that get you!</p>
                         <div className={styles.s2}>
                             <div className={styles.suggestioncard}>
                                 <h2>Recommend activities</h2>
