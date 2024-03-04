@@ -18,7 +18,7 @@ const RightSection = () => {
                 messages.length > 0 ? 
                 <div className='flex justify-center'>
                 <ul className='bg-gray-100 w-auto mx-6 lg:w-1/2 p-5 h-3/4 absolute overflow-auto rounded-lg'>{messages.map((m, index) => (
-                    <li key={index} className='m-1 whitespace-pre-wrap'>
+                    <li key={index} className='m-1 pre'>
                         {m.role === 'user' ? 'You: ' : <b>AI: </b>}
                         {m.content}
                     </li>))}
