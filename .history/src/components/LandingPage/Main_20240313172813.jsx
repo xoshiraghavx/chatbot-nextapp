@@ -16,7 +16,7 @@ export default function Hero() {
   return (
     <section className="relative flex min-h-full w-full flex-col  place-content-center px-4">
       {/* Patterns */}
-      <div className="absolute right-0 hidden min-h-full  w-1/4 flex-col justify-center bg-white bg-opacity-20 lg:flex">
+      <div className="absolute right-0 hidden min-h-full w-1/4 flex-col justify-center bg-white bg-opacity-20 lg:flex">
         {/* right patterns */}
         <div className="absolute h-full w-full overflow-clip">
           <div className="animation-delay-4000 absolute -right-1/4 top-1/4 h-16 w-[40rem] animate-blob overflow-clip bg-purple-400 opacity-40 blur-[80px] "></div>
@@ -70,7 +70,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="z-10 flex w-full max-w-[100vw] flex-col space-y-8 text-white">
+      <div className="z-10 flex w-full max-w-screen flex-col space-y-8 text-white">
         <h1 className="flex max-w-2xl flex-col space-y-1 text-3xl font-bold sm:text-5xl xl:text-6xl">
           {hero_content?.title &&
             hero_content?.title.map((item, i) => <span key={i}>{item}</span>)}
