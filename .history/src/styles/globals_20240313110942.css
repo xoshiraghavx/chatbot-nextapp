@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --btn-color: #434343;
+
+}
+body{
+  /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+  /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;  margin: 0;
+  background-color: rgb(108, 107, 107);
+  padding: 0;
+}
+.chat{
+  /* background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%); */
+  background-blend-mode: screen;
+  /* background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%); */
+  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255 255 255 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #434343;
+  border-radius: 0.4rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #353535;
+}
