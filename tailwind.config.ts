@@ -30,7 +30,13 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "btn-color": "var(--btn-color)",
+      },
+    },
   },
   plugins: [],
+  darkMode: "class",
+
 }
