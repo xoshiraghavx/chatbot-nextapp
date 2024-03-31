@@ -3,12 +3,12 @@ import { useRouter } from 'next/router';
 import React from 'react'
 import { signOut } from "next-auth/react"
 import { useSession } from "next-auth/react";
-import { ChatAltIcon, DocumentTextIcon } from '@heroicons/react/outline';
+import { ChatAltIcon, DocumentTextIcon, MenuAlt4Icon } from '@heroicons/react/outline';
 import Image from "next/image";
-import { XIcon } from '@heroicons/react/outline';
 
 
-const Nav = ({menuOpen, toggle}) => {
+
+const Nav = () => {
     const {data:session} = useSession();
     console.log({session});
     const inactiveLink = 'flex gap-1 p-1';
@@ -18,14 +18,11 @@ const Nav = ({menuOpen, toggle}) => {
 
     
   return (
-    <aside className={`${menuOpen ? 'fixed' : 'hidden'} md:block h-screen z-10 bg-[#3E3E3E] top-0 left-0 w-full md:relative p-4 md:w-1/5 `}>
-        <nav className='flex flex-col place-content-between	h-full py-4 w-full '>
+    <aside className='  sm:flex p-4 lg:w-1/5 w-[100%]'>
+        <nav className='flex flex-col place-content-between	h-full py-4 '>
             <div className='flex flex-col gap-4'>
-                <h1 className='text-2xl font-bold mb-4 flex items-center justify-between'>
+                <h1 className='text-2xl font-bold mb-4'>
                 AIConnect
-                <button onClick={()=>toggle()} className='md:hidden cursor-pointer'>
-              <XIcon className='w-6 text-white'/>
-            </button>
                 </h1>
                 <Link href={'/'} className={pathname ==='/' ? activeLink : inactiveLink}>
                 <ChatAltIcon className='w-6 '/>

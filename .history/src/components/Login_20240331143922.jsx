@@ -21,14 +21,14 @@ const Login = ({children}) => {
   if (session) {
     return (
       <div className="text-white min-h-screen flex">
-      <Nav menuOpen={menuOpen} toggle={handelNav} />
-    <div className="chat flex-grow mt-2 mr-2 mb-2 rounded-lg p-4">
+      <Nav />
       {/* toogle */}
           <div>
             <div onClick={handelNav} className='sm:hidden cursor-pointer'>
               <MenuAlt4Icon className='w-6 text-black ml-2'/>
             </div>
           </div>
+    <div className="chat flex-grow mt-2 mr-2 mb-2 rounded-lg p-4">
         {children}
 
         {/* logged in {session.user.email} */}

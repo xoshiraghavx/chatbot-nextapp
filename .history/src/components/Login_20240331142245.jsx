@@ -11,24 +11,16 @@ import { MenuAlt4Icon } from '@heroicons/react/outline';
 
 
 const Login = ({children}) => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-    const handelNav= ()=>{
-        setMenuOpen(!menuOpen);
-    }
+  
   const { data: session } = useSession()
 
   if (session) {
     return (
       <div className="text-white min-h-screen flex">
-      <Nav menuOpen={menuOpen} toggle={handelNav} />
+      <Nav />
     <div className="chat flex-grow mt-2 mr-2 mb-2 rounded-lg p-4">
       {/* toogle */}
-          <div>
-            <div onClick={handelNav} className='sm:hidden cursor-pointer'>
-              <MenuAlt4Icon className='w-6 text-black ml-2'/>
-            </div>
-          </div>
+
         {children}
 
         {/* logged in {session.user.email} */}

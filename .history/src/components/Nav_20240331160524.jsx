@@ -18,7 +18,7 @@ const Nav = ({menuOpen, toggle}) => {
 
     
   return (
-    <aside className={`${menuOpen ? 'fixed' : 'hidden'} md:block h-screen z-10 bg-[#3E3E3E] top-0 left-0 w-full md:relative p-4 md:w-1/5 `}>
+    <aside className={`${menuOpen ? 'fixed' : 'hidden'} md:block h-screen z-10 bg-[##3E3E3E] top-0 left-0 w-full md:relative p-4 md:w-1/5 `}>
         <nav className='flex flex-col place-content-between	h-full py-4 w-full '>
             <div className='flex flex-col gap-4'>
                 <h1 className='text-2xl font-bold mb-4 flex items-center justify-between'>
