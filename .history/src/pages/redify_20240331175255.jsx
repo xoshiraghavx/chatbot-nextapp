@@ -15,7 +15,7 @@ const redify = () => {
         <div className='text-4xl  font-bold text-center mb-[10%]'>
           Our new feature is on it&apos;s way.
         </div>
-        <div className='justify-center flex image'>
+        <div className='justify-center flex w-[70%] md:'>
         <Image
           src="/comingSoon.svg"
           width={400}

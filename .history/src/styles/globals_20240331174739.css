@@ -52,11 +52,6 @@ body{
   margin-top: 15%;
 
 }
-@media screen and (max-width: 600px) {
-  .comingsoon{
-   margin-top: 30%;
-  }
-  .image {
-    height: 75%;
-  }
+@media screen {
+  
 }

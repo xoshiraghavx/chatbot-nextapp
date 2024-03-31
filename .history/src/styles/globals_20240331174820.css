@@ -53,10 +53,7 @@ body{
 
 }
 @media screen and (max-width: 600px) {
-  .comingsoon{
-   margin-top: 30%;
-  }
-  .image {
-    height: 75%;
+  div.example {
+    display: none;
   }
 }
