@@ -17,7 +17,7 @@ const Login = ({children}) => {
         setMenuOpen(!menuOpen);
     }
   const { data: session } = useSession()
-
+  
   if (session) {
     return (
       <div className="text-white min-h-screen flex">
@@ -26,7 +26,7 @@ const Login = ({children}) => {
       {/* toogle */}
           <div>
             <div onClick={handelNav} className='sm:hidden cursor-pointer'>
-              <MenuAlt4Icon className='w-6 text-black ml-2'/>
+              <MenuAlt4Icon className='w-6'/>
             </div>
           </div>
         {children}

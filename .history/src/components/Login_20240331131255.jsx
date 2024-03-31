@@ -26,7 +26,7 @@ const Login = ({children}) => {
       {/* toogle */}
           <div>
             <div onClick={handelNav} className='sm:hidden cursor-pointer'>
-              <MenuAlt4Icon className='w-6 text-black ml-2'/>
+              <MenuAlt4Icon className='w-6 text-black ml-10'/>
             </div>
           </div>
         {children}

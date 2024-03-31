@@ -15,15 +15,18 @@ const Nav = () => {
     const activeLink = inactiveLink +' text-white bg-white bg-opacity-20 rounded-lg px-4 py-2';
     const router = useRouter();
     const {pathname} = router;
-
-    
   return (
-    <aside className=' hidden sm:flex p-4 w-1/5 '>
-        <nav className='flex flex-col place-content-between	h-full py-4 w-full '>
+    <aside className=' p-4 w-1/5 '>
+        <nav className='flex flex-col place-content-between	h-full py-4 '>
             <div className='flex flex-col gap-4'>
                 <h1 className='text-2xl font-bold mb-4'>
                 AIConnect
                 </h1>
+
+                <div>
+
+                </div>
+                
                 <Link href={'/'} className={pathname ==='/' ? activeLink : inactiveLink}>
                 <ChatAltIcon className='w-6 '/>
                 CommunicAI

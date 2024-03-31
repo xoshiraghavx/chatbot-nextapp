@@ -18,8 +18,7 @@ const Nav = () => {
 
     
   return (
-    <aside className=' hidden sm:flex p-4 w-1/5 '>
-        <nav className='flex flex-col place-content-between	h-full py-4 w-full '>
+        <nav className='flex flex-col place-content-between	h-full py-4 '>
             <div className='flex flex-col gap-4'>
                 <h1 className='text-2xl font-bold mb-4'>
                 AIConnect

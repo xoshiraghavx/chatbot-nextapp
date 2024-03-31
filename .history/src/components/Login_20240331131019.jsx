@@ -7,7 +7,7 @@ import DarkMode from '@/components/DarkMode'
 import Google from 'next-auth/providers/google'
 import Landing from './LandingPage/Landing'
 import { useState } from 'react';
-import { MenuAlt4Icon } from '@heroicons/react/outline';
+import { Menu } from '@heroicons/react/outline';
 
 
 const Login = ({children}) => {
@@ -26,7 +26,7 @@ const Login = ({children}) => {
       {/* toogle */}
           <div>
             <div onClick={handelNav} className='sm:hidden cursor-pointer'>
-              <MenuAlt4Icon className='w-6 text-black ml-2'/>
+              <MenuAlt4Icon className='w-6 text-black'/>
             </div>
           </div>
         {children}

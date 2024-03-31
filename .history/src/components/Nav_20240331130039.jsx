@@ -3,8 +3,9 @@ import { useRouter } from 'next/router';
 import React from 'react'
 import { signOut } from "next-auth/react"
 import { useSession } from "next-auth/react";
-import { ChatAltIcon, DocumentTextIcon } from '@heroicons/react/outline';
+import { ChatAltIcon, DocumentTextIcon, MenuAlt4Icon } from '@heroicons/react/outline';
 import Image from "next/image";
+import { useState } from 'react';
 
 
 
@@ -16,11 +17,20 @@ const Nav = () => {
     const router = useRouter();
     const {pathname} = router;
 
-    
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const handelNav= ()=>{
+        setMenuOpen(!menuOpen);
+    }
   return (
-    <aside className=' hidden sm:flex p-4 w-1/5 '>
-        <nav className='flex flex-col place-content-between	h-full py-4 w-full '>
-            <div className='flex flex-col gap-4'>
+    <aside className=' p-4 w-1/5 '>
+        <nav className='flex flex-col place-content-between	h-full py-4 '>
+                <div>
+                    <div onClick={handelNav} className='md:hidden cursor-pointer'>
+                    <MenuAlt4Icon className='w-6'/>
+                    </div>
+                </div>
+            <div className='hidden sm:flex flex-col gap-4'>
                 <h1 className='text-2xl font-bold mb-4'>
                 AIConnect
                 </h1>
