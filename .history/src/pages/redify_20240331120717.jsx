@@ -25,7 +25,6 @@ const redify = () => {
         </div>
       </div>
     </Login>
-    </>
   )
 }
 

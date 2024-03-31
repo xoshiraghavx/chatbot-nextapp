@@ -7,8 +7,7 @@ export default function Home() {
 
  return (
     <>
-    <Login><Chat/></Login>
-    </>
+    <Login><Chat/></Login>\</>
 
  );
 }

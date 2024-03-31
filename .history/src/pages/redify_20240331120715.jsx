@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const redify = () => {
   return (
-    <>
+    <></>
     <Login>
       <div className='text-black comingsoon'>
         <div className='text-center mb-5 text-xl font-semibold '>
@@ -25,7 +25,6 @@ const redify = () => {
         </div>
       </div>
     </Login>
-    </>
   )
 }
 
