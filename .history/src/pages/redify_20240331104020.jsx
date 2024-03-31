@@ -7,7 +7,7 @@ import Image from 'next/image'
 const redify = () => {
   return (
     <Login>
-      <div className='text-black comingsoon'>
+      <div className='text-black comingsoon space-between'>
         <div className='text-center mb-5 text-xl font-semibold '>
         <span className='bg-[#3A3A3A] bg-opacity-30 rounded-lg py-2 px-3'>COMING SOON!</span>
         </div>

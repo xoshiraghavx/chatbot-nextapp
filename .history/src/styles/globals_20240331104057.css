@@ -48,7 +48,7 @@ body{
 .comingsoon{
   display: grid;
   place-content: center;
-  height: 75%;
+  height: 80%;
   margin-top: 15%;
 
 }

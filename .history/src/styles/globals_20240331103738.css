@@ -46,9 +46,9 @@ body{
   background: #353535;
 }
 .comingsoon{
-  display: grid;
-  place-content: center;
-  height: 75%;
-  margin-top: 15%;
+  max-width: fit-content;
+  margin-bottom: auto;
+
+  /* margin-top: 10%; */
 
 }

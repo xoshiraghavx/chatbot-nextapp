@@ -45,10 +45,11 @@ body{
 ::-webkit-scrollbar-thumb:hover {
   background: #353535;
 }
-.comingsoon{
-  display: grid;
-  place-content: center;
-  height: 75%;
-  margin-top: 15%;
+.xyz{
+  position: relative;
+  inset: 0;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
 
 }
