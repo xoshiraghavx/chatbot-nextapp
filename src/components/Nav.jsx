@@ -22,7 +22,7 @@ const Nav = ({menuOpen, toggle}) => {
         <nav className='flex flex-col place-content-between	h-full py-4 w-full '>
             <div className='flex flex-col gap-4'>
                 <h1 className='text-2xl font-bold mb-4 flex items-center justify-between'>
-                {/* AIConnect */} PromptX
+                AIConnect
                 <button onClick={()=>toggle()} className='md:hidden cursor-pointer'>
               <XIcon className='w-6 text-white'/>
             </button>

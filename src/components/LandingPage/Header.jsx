@@ -4,8 +4,7 @@ import {signIn } from "next-auth/react"
 
 export default function Header() {
   const header_content = {
-    // logo: "AIConnect",
-    logo: "PromptX",
+    logo: "AIConnect",
     button: "Sign in",
   };
   return (
