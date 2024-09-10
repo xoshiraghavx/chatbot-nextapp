@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { useChat } from 'ai/react';
 import Image from 'next/image'
+import { marked } from 'marked';
 
 
 const RightSection = () => {
@@ -15,7 +16,11 @@ const RightSection = () => {
                 <ul className='bg-black bg-opacity-5 w-[90%] my-14 mx-2 lg:my-10 lg:w-2/3 p-5 h-3/4 absolute overflow-auto rounded-lg'>{messages.map((m, index) => (
                     <li key={index} className='m-1 whitespace-pre-wrap'>
                         {m.role === 'user' ? 'You: ' : <b>AI: </b>}
-                        {m.content}
+                        <div
+                         dangerouslySetInnerHTML={{
+                           __html: m.content ? marked.parse(m.content) : "",
+                         }}
+                       ></div>
                     </li>))}
                 </ul>
                 </div>

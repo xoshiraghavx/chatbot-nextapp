@@ -32,8 +32,10 @@
     "**/*.ts",
     "**/*.tsx",
     "src/components/Chat.jsx",
-    ".next/types/**/*.ts"
-, "src/pages/_app.jsx", "src/components/Login.jsx"  ],
+    ".next/types/**/*.ts", 
+    "src/pages/_app.jsx", 
+    "src/components/Login.jsx"
+  ],
   "exclude": [
     "node_modules"
   ]
